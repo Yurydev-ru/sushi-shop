@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/styles/main.scss'],
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+  typescript: {
+    strict: true,
+    typeCheck: true,
+  },
+  devtools: { enabled: true },
+  compatibilityDate: '2024-12-05'
 })
