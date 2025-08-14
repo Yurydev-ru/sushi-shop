@@ -1,0 +1,100 @@
+/* ====== RESET / NORMALIZE ====== */
+
+/* 1. Убираем все отступы и рамки */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Улучшаем рендеринг текста */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 3. Гарантируем, что 1rem = 16px */
+html {
+  font-size: 100%;
+}
+
+/* 4. Наследуем шрифт для всех элементов */
+body,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 5. Убираем дефолтный фон и цвет у body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+/* 6. Делаем медиа-элементы отзывчивыми */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Убираем стандартный список */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Убираем оформление ссылок */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 9. Отключаем инерцию на мобилках */
+html,
+body {
+  overscroll-behavior: none;
+}
+
+/* 10. Настройки кнопок */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 11. Убираем quotes у blockquote и q */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* 12. Убираем фокус-обводку, но оставляем при навигации с клавиатуры */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
