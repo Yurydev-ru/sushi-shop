@@ -37,7 +37,8 @@ select {
 body {
   line-height: 1.5;
   min-height: 100vh;
-  background-color: transparent;
+  background-color: var(--color-bg);
+    color: var(--color-primary);
 }
 
 /* 6. Делаем медиа-элементы отзывчивыми */
