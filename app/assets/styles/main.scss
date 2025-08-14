@@ -1,3 +1,6 @@
 @use "./base/resets";
 @use "./abstracts/variables";
 @use "./base/root";
+@use "./utils/helpers";
+@use "./layout/grid";
+@use "./component/shared";
