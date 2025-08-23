@@ -1,0 +1,38 @@
+/* Светлая тема (по умолчанию) */
+:root, [data-theme="light"] {
+  /* Основные цвета */
+  --color-primary: #2962FF;
+  --color-primary-hover: #0039CB;
+  --color-secondary: #00C853;
+  --color-accent: #FF6D00;
+  
+  /* Текстовые цвета */
+  --color-text: oklch(22.62% 0.00418 264.533);
+  --color-text-secondary: lch(37.95% 9.2 269.26);
+  --color-text-tertiary: #A0AEC0;
+  --color-text-inverted: #FFFFFF;
+  
+  /* Фоны */
+  --color-bg: lch(96.77% 6.67 115.82);
+  --color-bg-surface: lch(86.83% 5.51 90.24);
+  --color-bg-subtle: lch(95.26% 3.08 256.06);
+  --color-bg-muted: #E2E8F0;
+  
+  /* Границы */
+  --color-border: #E2E8F0;
+  --color-border-hover: #CBD5E0;
+  
+  /* Статусы */
+  --color-success: #00C853;
+  --color-warning: #FFAB00;
+  --color-error: #FF3D00;
+  --color-info: #2962FF;
+  
+  /* Градиенты */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, #0052D4 100%);
+  --gradient-success: linear-gradient(135deg, var(--color-success) 0%, #00A152 100%);
+  
+  /* Тени (тематические) */
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-nav: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

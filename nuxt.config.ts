@@ -11,6 +11,17 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+          @use "./assets/styles/abstracts/variables" as *;
+          `
+        }
+      }
+    }
+  },
   devtools: { enabled: true },
   compatibilityDate: '2024-12-05'
 })
